@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Umnik';
+  src: url(../fonts/umnik-bold.woff2);
+  font-weight: bolder;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(../fonts/ProximaNova-Bold.woff);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(../fonts/ProximaNova-Regular.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+}
+.wrapper {
+  max-width: 1170px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.header {
+  font-weight: normal;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.promo-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 566px;
+  height: 294px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.promo_card__sale {
+  background-image: url(../img/bgc_1.png);
+}
+.promo-card__good { 
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.promo-card__games {
+  position: relative;
+}
+.promo-card__link {
+  position: relative;
+}
+.promo-card__present {
+  position: absolute;
+  top: 0px;
+  left: 140px;
+}
+.promo_card__content {
+  flex: 0 1 300px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.promo-card__header {
+  font-weight: bold;
+  font-size: 30px;
+}
+.promo-card__text {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 16px;
+}
+.card-countdown {
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.time{
+  width: 80px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 5px;
+  background-image: url(../img/dashed.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card-countdown__time { 
+  padding-left: 10px;
+  font-family: 'Umnik';
+  font-size: 55px;
+  font-weight: bolder;
+  color: #000;
+  letter-spacing: 5px;
+}
+.card-countdown__text {
+  margin-top: 5px;
+  text-align: center;
+}
+.promo-card__footer {
+  margin-top: 20px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.price__now {
+  margin-top: -10px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff0072;
+}
+.price__last {
+  font-size: 16px;
+  position: relative;
+}
+.price__last:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 50%;
+  background-color: #e3000b;
+  transform: rotate(10deg);
+  left: -5%;
+  top: 10px;
+}
+.promo-card__more {
+  width: 142px;
+  height: 43px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-style: none;
+  background-color: #ff0072;
+  box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+}
+.button__footer {
+  position: absolute;
+  right: 5%;
+  bottom: 7.5%;
+}
+
+@media (max-width: 566px) {
+  .promo-card {
+    min-width: 320px;
+    max-width: 566px;
+    height: auto;
+  }
+  .promo_card__sale { 
+    justify-content: center;
+  }
+  .games__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .button__footer {
+    bottom: 8.5%;
+  }
+}
